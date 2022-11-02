@@ -8,11 +8,11 @@ const SearchForm = props => {
 
   const dispatch = useDispatch();
 
-  const [title] = useState('');
+  const [searchString] = useState('');
 
   const handleSubmit = e => {
     e.preventDefault();
-    dispatch({ type: 'UPDATE_SEARCHSTRING', cards: { title} });
+    dispatch({ type: 'UPDATE_SEARCHSTRING', searchString: { searchString} });
   };
 
   return (
