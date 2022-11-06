@@ -7,13 +7,13 @@ const NavBar =props => {
             <Container>
                 <div className={styles.navigation}>
                     <a className={styles.icon} href="/"><span className="fa fa-tasks" /></a>
-                    <ul>
+                    <ul className={styles.list}>
                         <li><a href="/">HOME</a></li>
                         <li><a href="/favorite">FAVORITE</a></li>
                         <li><a href="/about">ABOUT</a></li>
                     </ul>
                 </div>
-            </Container>    
+            </Container>   
         </nav>
     )
 }
