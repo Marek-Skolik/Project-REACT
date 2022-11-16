@@ -7,6 +7,9 @@ const Favorite = () => {
       <Container>
             <div className={styles.favorite}>
                 <PageTitle>FAVORITE</PageTitle>
+                <div className={styles.contents}>
+                  <p>Lorem ipsum</p>
+                </div>
             </div>
       </Container>
     )

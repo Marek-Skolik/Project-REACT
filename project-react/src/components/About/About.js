@@ -7,6 +7,9 @@ const About = () => {
     <Container>
         <div className={styles.about}>
             <PageTitle>ABOUT</PageTitle>
+            <div className={styles.contents}>
+              <p>Lorem ipsum</p>
+            </div>
         </div>
     </Container>
   );
