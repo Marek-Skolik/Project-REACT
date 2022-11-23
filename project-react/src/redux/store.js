@@ -15,12 +15,14 @@ export const getColumnsByList = ({ columns }, listId) => columns.filter((column)
 
 export const getAllLists = ({ lists }) => lists;
 
+export const getSearchString = ({ searchString}) => searchString;
+
 // action creators
 export const addColumn = payload => ({ type: 'ADD_COLUMN', payload });
 
 export const addCard = payload => ({ type: 'ADD_CARD', payload });
 
-export const searchForm = payload => ({type: 'UPDATE_SEARCHSTRING', payload});
+export const updateSearchString = payload => ({type: 'UPDATE_SEARCHSTRING', payload});
 
 const reducer = (state, action) => {
   switch(action.type) {
