@@ -4,6 +4,7 @@ import shortid from 'shortid';
 import { strContains } from '../utils/strContains';
 
 //selectors
+
 export const getFilteredCards = ({ cards, searchString }, columnId) => cards
   .filter(card => card.columnId === columnId && strContains(card.title, searchString));
 
@@ -18,11 +19,15 @@ export const getAllLists = ({ lists }) => lists;
 export const getSearchString = ({ searchString}) => searchString;
 
 // action creators
+
 export const addColumn = payload => ({ type: 'ADD_COLUMN', payload });
 
 export const addCard = payload => ({ type: 'ADD_CARD', payload });
 
 export const updateSearchString = payload => ({type: 'UPDATE_SEARCHSTRING', payload});
+
+export const addList = payload => ({ type: 'ADD_LIST', payload});
+
 
 const reducer = (state, action) => {
   switch(action.type) {
