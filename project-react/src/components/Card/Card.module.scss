@@ -11,3 +11,11 @@
     justify-content: space-between;
     font-weight: bold;
 }
+
+button {
+    border: none;
+    background-color: white;
+    :hover {
+        color: red;
+    }
+}

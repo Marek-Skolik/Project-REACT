@@ -10,6 +10,7 @@ const ListForm = props => {
 
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
+    
     const handleSubmit = e => {
         e.preventDefault();
         dispatch(addList({ title, description }));
