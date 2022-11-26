@@ -16,6 +16,7 @@ button {
     border: none;
     background-color: white;
     :hover {
+        opacity: 0.4;
         color: red;
     }
 }

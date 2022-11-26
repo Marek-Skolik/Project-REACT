@@ -34,6 +34,9 @@ export const toggleCardFavorite = (payload) => ({ type: 'TOGGLE_CARD_FAVORITE', 
 
 const reducer = (state, action) => {
   switch(action.type) {
+    case 'ADD_LIST':
+      return {...state, lists: [... state.lists, { ...action.payload, id: shortid() }]};
+
     case 'ADD_COLUMN':
       return { ...state, columns: [...state.columns, { ...action.payload, id: shortid() }]};
  
