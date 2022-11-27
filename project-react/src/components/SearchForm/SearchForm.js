@@ -3,7 +3,7 @@ import TextInput from '../TextInput/TextInput';
 import Button from '../Button/Button';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getSearchString, updateSearchString } from '../../redux/store';
+import { getSearchString, UPDATE_SEARCHSTRING } from '../../redux/searchStringRedux';
 
 const SearchForm = props => {
 
@@ -14,7 +14,7 @@ const SearchForm = props => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    dispatch(updateSearchString(searchString));  
+    dispatch(UPDATE_SEARCHSTRING(searchString));  
   };
 
   return (
